@@ -1,0 +1,363 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+
+    background-color: #ffffff;
+
+    color: #111111;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    max-width: 1200px;
+
+    margin: 10px auto 0;
+}
+
+
+/* Logo + Name */
+
+.profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    height: 55px;
+
+    padding: 5px 10px;
+
+    background-color: #f5f5f5;
+}
+
+.profile .logo {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+.profile span {
+    font-size: 1.2rem;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   HAMBURGER
+========================= */
+
+#menu-button {
+    display: block;
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 18px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: none;
+
+    background-color: #222222;
+}
+
+nav.open {
+    display: flex;
+
+    flex-direction: column;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 7px 10px;
+
+    font-size: 0.75rem;
+}
+
+nav a:hover {
+    background-color: #444444;
+}
+
+nav a.active {
+    background-color: #555555;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 7px 5px;
+}
+
+h1 {
+    font-size: 1.2rem;
+
+    font-weight: 500;
+
+    margin: 7px 0;
+}
+
+
+/* =========================
+   ABOUT + PHOTO
+========================= */
+
+.about-photo {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+}
+
+section {
+    margin: 0 0 7px;
+}
+
+section h2 {
+    margin: 0;
+
+    padding: 3px;
+
+    background-color: #222222;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+}
+
+
+/* About Me box */
+
+.about-content {
+    background-color: #dddddd;
+
+    min-height: 140px;
+
+    padding: 8px;
+}
+
+.about-content p {
+    margin: 0;
+
+    font-size: 0.65rem;
+
+    line-height: 1.35;
+}
+
+
+/* =========================
+   STUDENT PHOTO
+========================= */
+
+.photo-container {
+    background-color: #dddddd;
+
+    min-height: 140px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 8px;
+}
+
+.photo-container img {
+    width: 110px;
+
+    height: 140px;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   CERTIFICATE
+========================= */
+
+.certifications {
+    margin-top: 5px;
+}
+
+#course-buttons {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin: 5px 0;
+}
+
+#course-buttons button {
+    width: 100%;
+
+    padding: 2px;
+
+    background-color: #dddddd;
+
+    border: 1px solid #777777;
+
+    border-radius: 3px;
+
+    font-size: 0.7rem;
+
+    cursor: pointer;
+}
+
+#course-buttons button:hover {
+    background-color: #bbbbbb;
+}
+
+
+/* =========================
+   COURSES
+========================= */
+
+#courses-container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+}
+
+.course-card {
+    background-color: #dddddd;
+
+    border: 1px solid #999999;
+
+    text-align: center;
+
+    padding: 3px;
+
+    font-size: 0.65rem;
+}
+
+.course-card h3 {
+    margin: 0;
+
+    font-size: 0.65rem;
+}
+
+.course-card p {
+    margin: 2px;
+}
+
+
+/* Completed course */
+
+.course-card.completed {
+    background-color: #c8e6c9;
+
+    border-color: #4caf50;
+}
+
+
+/* =========================
+   CREDITS
+========================= */
+
+.credits {
+    text-align: center;
+
+    font-size: 0.65rem;
+
+    margin: 5px 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 5px;
+
+    background-color: #dddddd;
+
+    text-align: center;
+
+    font-size: 0.65rem;
+}
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 4px;
+}
+
+.social-links a {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.social-links img {
+    width: 28px;
+
+    height: 28px;
+
+    object-fit: contain;
+}
+
+footer p {
+    margin: 2px;
+}

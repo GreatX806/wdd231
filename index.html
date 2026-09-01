@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 - Great Afangide</title>
+
+    <meta name="description" content="WDD 231 course home page for Great Afangide.">
+
+    <meta name="author" content="Great Afangide">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="profile">
+
+            <img src="images/logo.png" alt="Site logo" class="logo">
+
+            <span>Great Afangide</span>
+
+        </div>
+
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+
+        <nav id="navigation">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="#">
+                Chamber Project
+            </a>
+
+            <a href="#">
+                Final Project
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <h1>Home</h1>
+
+
+        <!-- ABOUT + PHOTO -->
+        <div class="about-photo">
+
+            <section class="about">
+
+                <h2>About Me</h2>
+
+                <div class="about-content">
+
+                    <p>
+                        My name is Great Afangide. I am a student studying
+                        software development and web technologies. I enjoy
+                        building websites, learning programming, and
+                        developing practical software solutions.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section class="student-photo">
+
+                <h2>Student Photo</h2>
+
+                <div class="photo-container">
+
+                    <img src="images/my-photo.jpeg" alt="Photo of Great Afangide">
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- CERTIFICATE -->
+        <section class="certifications">
+
+            <h2>Web Certificate Courses</h2>
+
+
+            <div id="course-buttons">
+
+                <button id="all-courses">
+                    All
+                </button>
+
+                <button id="cse-courses">
+                    CSE
+                </button>
+
+                <button id="wdd-courses">
+                    WDD
+                </button>
+
+            </div>
+
+
+            <div id="courses-container"></div>
+
+
+            <p class="credits">
+                The total credits for courses listed above is
+                <span id="total-credits">0</span>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/in/great-afangide-598083270e/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+
+
+            <a href="https://github.com/GreatX806" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+
+
+            <a href="https://web.facebook.com/profile.php?id=61593506344829" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+
+        </div>
+
+
+        <p>
+            © <span id="currentyear"></span>
+            Great Afangide, Lagos, Nigeria
+        </p>
+
+
+        <p id="lastmodified"></p
+
+    </footer>
+
+</body>
+
+</html>
