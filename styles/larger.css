@@ -1,73 +1,62 @@
-@media screen and (min-width: 600px) {
+/* ===================================
+   Lagos Chamber of Commerce
+   Larger-viewport overrides
+=================================== */
 
-    /* =========================
-       HEADER
-    ========================= */
+@media screen and (min-width: 640px) {
+  .directory.grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    header {
-        max-width: 1200px;
-    }
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 
-    #menu-button {
-        display: none;
-    }
+  .main-nav {
+    display: block;
+    width: auto;
+    order: 2;
+  }
 
-    nav {
-        display: flex;
+  .main-nav ul {
+    flex-direction: row;
+    margin-top: 0;
+    border-top: none;
+  }
 
-        flex-direction: row;
-    }
+  .main-nav a {
+    padding: 0.5rem 1rem;
+    border-bottom: none;
+  }
 
-    nav a {
-        padding: 7px 10px;
-    }
+  .site-header {
+    padding: 1rem 2rem;
+  }
 
+  main {
+    padding: 2rem;
+  }
 
-    /* =========================
-       MAIN
-    ========================= */
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
 
-    main {
-        max-width: 1200px;
-    }
+  .footer-dev {
+    text-align: right;
+  }
+}
 
+@media screen and (min-width: 1000px) {
+  .directory.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    /* =========================
-       ABOUT + PHOTO
-    ========================= */
-
-    .about-photo {
-        grid-template-columns: 2fr 1fr;
-
-        gap: 8px;
-    }
-
-    .about-content {
-        min-height: 140px;
-    }
-
-    .photo-container {
-        min-height: 140px;
-    }
-
-
-    /* =========================
-       COURSES
-    ========================= */
-
-    #courses-container {
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 5px;
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-        max-width: 1200px;
-    }
-
+  .site-header h1 {
+    font-size: 1.4rem;
+  }
 }

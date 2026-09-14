@@ -42,7 +42,12 @@
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     text-align: left;
+  }
+
+  .footer-dev {
+    text-align: right;
   }
 }
 
