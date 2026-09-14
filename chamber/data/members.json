@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "Lekki Fresh Foods Market",
+      "address": "14 Admiralty Way, Lekki Phase 1, Lagos",
+      "phone": "(234) 802-345-6781",
+      "url": "https://www.lekkifreshfoods.example.com",
+      "image": "lekki-fresh-foods.svg",
+      "membership": 3,
+      "tagline": "Farm-to-table groceries and daily produce delivery.",
+      "founded": 2014
+    },
+    {
+      "name": "Victoria Island Law Chambers",
+      "address": "27 Adeola Odeku Street, Victoria Island, Lagos",
+      "phone": "(234) 803-221-9087",
+      "url": "https://www.vilawchambers.example.com",
+      "image": "victoria-island-law.svg",
+      "membership": 3,
+      "tagline": "Corporate, real estate, and family law practice.",
+      "founded": 2009
+    },
+    {
+      "name": "Oceanview Hotel & Suites",
+      "address": "5 Ahmadu Bello Way, Victoria Island, Lagos",
+      "phone": "(234) 701-556-2340",
+      "url": "https://www.oceanviewsuites.example.com",
+      "image": "oceanview-hotel.svg",
+      "membership": 2,
+      "tagline": "Waterfront rooms and event space for business travelers.",
+      "founded": 2017
+    },
+    {
+      "name": "Naija Tech Hub",
+      "address": "9 Providence Street, Lekki Phase 1, Lagos",
+      "phone": "(234) 809-774-1123",
+      "url": "https://www.naijatechhub.example.com",
+      "image": "naija-tech-hub.svg",
+      "membership": 2,
+      "tagline": "Coworking space and startup incubator for tech founders.",
+      "founded": 2019
+    },
+    {
+      "name": "Ikoyi Print Works",
+      "address": "3 Bourdillon Road, Ikoyi, Lagos",
+      "phone": "(234) 812-908-6674",
+      "url": "https://www.ikoyiprintworks.example.com",
+      "image": "ikoyi-print-works.svg",
+      "membership": 1,
+      "tagline": "Commercial printing, branding, and signage.",
+      "founded": 2021
+    },
+    {
+      "name": "Lagos Freight & Logistics",
+      "address": "112 Apapa-Oshodi Expressway, Apapa, Lagos",
+      "phone": "(234) 815-663-2298",
+      "url": "https://www.lagosfreight.example.com",
+      "image": "lagos-freight-logistics.svg",
+      "membership": 2,
+      "tagline": "Port clearing, warehousing, and last-mile delivery.",
+      "founded": 2012
+    },
+    {
+      "name": "Sunrise Realty Group",
+      "address": "41 Toyin Street, Ikeja, Lagos",
+      "phone": "(234) 706-441-8850",
+      "url": "https://www.sunriserealty.example.com",
+      "image": "sunrise-realty.svg",
+      "membership": 1,
+      "tagline": "Residential and commercial property management.",
+      "founded": 2020
+    }
+  ]
+}

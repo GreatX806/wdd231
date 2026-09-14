@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Directory | Lagos Chamber of Commerce</title>
+  <meta name="description" content="Browse verified member businesses of the Lagos Chamber of Commerce, including contact details, membership level, and website links.">
+  <meta name="author" content="Great Afangide">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Facebook / Open Graph Meta -->
+  <meta property="og:title" content="Member Directory | Lagos Chamber of Commerce">
+  <meta property="og:description" content="Browse verified member businesses of the Lagos Chamber of Commerce, including contact details, membership level, and website links.">
+  <meta property="og:image" content="https://username.github.io/wdd231/chamber/images/favicon.svg">
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- CSS: reset first, then mobile styles, then larger screens -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/larger.css">
+
+  <script src="js/directory.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-content">
+      <img src="images/favicon.svg" alt="Lagos Chamber of Commerce logo" class="site-logo">
+      <h1>Lagos Chamber of Commerce</h1>
+    </div>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="directory-intro">
+      <h2>Member Directory</h2>
+      <p>Explore businesses that make up our chamber community. Switch between grid and list view below.</p>
+      <div class="view-toggle" role="group" aria-label="Directory view selection">
+        <button id="grid-btn" class="view-btn active" aria-pressed="true" aria-label="Grid view">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg>
+        </button>
+        <button id="list-btn" class="view-btn" aria-pressed="false" aria-label="List view">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2" y="4" width="20" height="3"/><rect x="2" y="10.5" width="20" height="3"/><rect x="2" y="17" width="20" height="3"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section id="directory-list" class="directory grid-view" aria-live="polite">
+      <p class="loading">Loading member directory…</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h2>Lagos Chamber of Commerce</h2>
+        <p>14 Marina Road, Lagos Island, Lagos, Nigeria</p>
+        <p>Phone: (234) 700-CHAMBER</p>
+        <p>Email: info@lagoschamber.example.com</p>
+      </div>
+      <div class="footer-dev">
+        <p>Great Afangide</p>
+        <p>WDD 231 &mdash; Web Frontend Development I</p>
+        <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

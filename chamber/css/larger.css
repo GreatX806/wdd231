@@ -1,0 +1,57 @@
+/* ===================================
+   Lagos Chamber of Commerce
+   Larger-viewport overrides
+=================================== */
+
+@media screen and (min-width: 640px) {
+  .directory.grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+    width: auto;
+    order: 2;
+  }
+
+  .main-nav ul {
+    flex-direction: row;
+    margin-top: 0;
+    border-top: none;
+  }
+
+  .main-nav a {
+    padding: 0.5rem 1rem;
+    border-bottom: none;
+  }
+
+  .site-header {
+    padding: 1rem 2rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .directory.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .site-header h1 {
+    font-size: 1.4rem;
+  }
+}
