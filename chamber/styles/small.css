@@ -20,14 +20,14 @@
 }
 
 body {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background-color: var(--cream);
   color: var(--ink);
   overflow-x: hidden;
 }
 
 h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Merriweather", Georgia, "Times New Roman", serif;
   color: var(--teal-dark);
 }
 
@@ -54,8 +54,10 @@ h1, h2, h3 {
   height: 40px;
 }
 
-.site-header h1 {
+.site-title {
   color: var(--cream);
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 700;
   font-size: 1.1rem;
 }
 
@@ -116,7 +118,7 @@ main {
   margin-bottom: 1.25rem;
 }
 
-.directory-intro h2 {
+.directory-intro h1 {
   margin-bottom: 0.4rem;
 }
 

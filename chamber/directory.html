@@ -13,23 +13,28 @@
   <!-- Facebook / Open Graph Meta -->
   <meta property="og:title" content="Member Directory | Lagos Chamber of Commerce">
   <meta property="og:description" content="Browse verified member businesses of the Lagos Chamber of Commerce, including contact details, membership level, and website links.">
-  <meta property="og:image" content="https://username.github.io/wdd231/chamber/images/favicon.svg">
-  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="https://greatx806.github.io/wdd231/chamber/images/favicon.svg">
+  <meta property="og:url" content="https://greatx806.github.io/wdd231/chamber/directory.html">
   <meta property="og:type" content="website">
 
-  <!-- CSS: reset first, then mobile styles, then larger screens -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/small.css">
-  <link rel="stylesheet" href="css/larger.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <script src="js/directory.js" defer></script>
+  <!-- CSS: reset first, then mobile styles, then larger screens -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="header-content">
       <img src="images/favicon.svg" alt="Lagos Chamber of Commerce logo" class="site-logo">
-      <h1>Lagos Chamber of Commerce</h1>
+      <p class="site-title">Lagos Chamber of Commerce</p>
     </div>
     <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -46,7 +51,7 @@
 
   <main>
     <section class="directory-intro">
-      <h2>Member Directory</h2>
+      <h1>Member Directory</h1>
       <p>Explore businesses that make up our chamber community. Switch between grid and list view below.</p>
       <div class="view-toggle" role="group" aria-label="Directory view selection">
         <button id="grid-btn" class="view-btn active" aria-pressed="true" aria-label="Grid view">
@@ -71,7 +76,8 @@
         <p>Phone: (234) 700-CHAMBER</p>
         <p>Email: info@lagoschamber.example.com</p>
       </div>
-       <div class="footer-social">
+
+      <div class="footer-social">
         <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Lagos Chamber of Commerce on YouTube">
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5l6.3 3.5-6.3 3.5Z"/></svg>
         </a>
@@ -82,11 +88,12 @@
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
         </a>
       </div>
+
       <div class="footer-dev">
+        <p>WDD231 Class Project</p>
         <p>Great Afangide</p>
-        <p>WDD 231 &mdash; Web Frontend Development I</p>
         <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>Last Modification: <span id="last-modified"></span></p>
       </div>
     </div>
   </footer>
