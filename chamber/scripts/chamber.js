@@ -72,7 +72,7 @@ function displayEvents() {
 
 // ---------- Weather (OpenWeatherMap) ----------
 // Get a free API key at https://openweathermap.org/api and paste it below.
-const WEATHER_API_KEY = "c58cb30f8bd78f33b6149e88073b5463";
+const WEATHER_API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
 const WEATHER_LAT = 6.5244; // Lagos, NG
 const WEATHER_LON = 3.3792;
 
@@ -188,6 +188,35 @@ function spotlightCardHTML(member) {
     </div>`;
 }
 
+// ---------- Join page: hidden timestamp ----------
+function setJoinTimestamp() {
+  const field = document.getElementById("timestamp");
+  if (!field) return;
+  field.value = new Date().toString();
+}
+
+// ---------- Join page: membership benefit modals ----------
+function setupMembershipModals() {
+  const triggers = document.querySelectorAll("[data-dialog-target]");
+  if (!triggers.length) return;
+
+  triggers.forEach((trigger) => {
+    const dialog = document.getElementById(trigger.dataset.dialogTarget);
+    if (!dialog) return;
+
+    trigger.addEventListener("click", () => dialog.showModal());
+
+    dialog.querySelectorAll("[data-dialog-close]").forEach((closeBtn) => {
+      closeBtn.addEventListener("click", () => dialog.close());
+    });
+
+    // Close when clicking the backdrop (outside the dialog content box)
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+  });
+}
+
 // ---------- Init ----------
 document.addEventListener("DOMContentLoaded", () => {
   setupNav();
@@ -195,4 +224,6 @@ document.addEventListener("DOMContentLoaded", () => {
   displayEvents();
   displayWeather();
   displaySpotlights();
+  setJoinTimestamp();
+  setupMembershipModals();
 });

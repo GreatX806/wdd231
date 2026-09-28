@@ -518,3 +518,235 @@ main {
 .social-links a {
   display: inline-flex;
 }
+
+/* ============================================
+   Join page: form + membership cards + modals
+   ============================================ */
+
+.join-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 800px) {
+  .join-layout {
+    grid-template-columns: 1.35fr 1fr;
+  }
+}
+
+.join-form fieldset {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem 1.2rem;
+  margin: 0 0 1.25rem;
+}
+
+.join-form legend {
+  font-family: var(--font-display);
+  font-weight: 600;
+  padding: 0 0.4rem;
+  color: var(--teal-deep);
+}
+
+.join-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+  color: var(--charcoal);
+  background: #fff;
+}
+
+.join-form input:focus-visible,
+.join-form textarea:focus-visible {
+  outline: 3px solid var(--ochre-dark);
+  outline-offset: 1px;
+}
+
+.join-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.join-form small {
+  display: block;
+  font-weight: 400;
+  color: var(--charcoal-soft);
+  margin-top: 0.3rem;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.radio-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--teal-deep);
+}
+
+.submit-button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* Membership cards */
+
+.membership-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.membership-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: cardRise 0.55s ease forwards;
+}
+
+.membership-card:nth-child(1) { animation-delay: 0.05s; }
+.membership-card:nth-child(2) { animation-delay: 0.2s; }
+.membership-card:nth-child(3) { animation-delay: 0.35s; }
+.membership-card:nth-child(4) { animation-delay: 0.5s; }
+
+@keyframes cardRise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .membership-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.membership-card h3 {
+  font-size: 1.1rem;
+  color: var(--teal-deep);
+}
+
+.membership-card p {
+  font-size: 0.92rem;
+  color: var(--charcoal-soft);
+  margin-bottom: 0.75rem;
+}
+
+.membership-card button {
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.92rem;
+  background: none;
+  border: none;
+  color: var(--teal-deep);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Native dialog modals */
+
+dialog {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0;
+  width: min(420px, 90vw);
+  box-shadow: 0 20px 45px rgba(11, 79, 74, 0.25);
+}
+
+dialog::backdrop {
+  background: rgba(11, 79, 74, 0.55);
+}
+
+.dialog-inner {
+  padding: 1.5rem;
+}
+
+.dialog-inner h3 {
+  color: var(--teal-deep);
+  margin-bottom: 0.75rem;
+}
+
+.dialog-inner ul {
+  margin: 0 0 1.25rem;
+  padding-left: 1.2rem;
+}
+
+.dialog-inner li {
+  margin-bottom: 0.4rem;
+}
+
+.dialog-close {
+  font: inherit;
+  font-weight: 600;
+  background: var(--ochre);
+  color: var(--charcoal);
+  border: none;
+  border-radius: 999px;
+  padding: 0.55rem 1.3rem;
+  cursor: pointer;
+}
+
+/* ============================================
+   Thank-you page
+   ============================================ */
+
+.confirmation-panel h1 {
+  color: var(--teal-deep);
+}
+
+.confirmation-list {
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.confirmation-list div {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.6rem;
+}
+
+.confirmation-list dt {
+  font-weight: 600;
+  color: var(--teal-deep);
+}
+
+.confirmation-list dd {
+  margin: 0;
+}
