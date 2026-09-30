@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join | Lagos Chamber of Commerce</title>
-  <meta name="description" content="Apply for membership with the Lagos Chamber of Commerce and choose the level that fits your business." />
-  <meta name="author" content="Great Afangide" />
+  <meta name="description" content="Apply for membership with the Lagos Chamber of Commerce and choose the level that fits your business.">
+  <meta name="author" content="Great Afangide">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b4f4a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23e0a527' text-anchor='middle'%3ELC%3C/text%3E%3C/svg%3E" />
-  <meta name="theme-color" content="#0b4f4a" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b4f4a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23e0a527' text-anchor='middle'%3ELC%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0b4f4a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Join the Lagos Chamber of Commerce | Apply Today">
+  <meta property="og:description" content="Apply for membership with the Lagos Chamber of Commerce and choose the NP, Bronze, Silver, or Gold level that fits your business.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://greatx806.github.io/wdd231/chamber/images/hero-lagos.webp">
+  <meta property="og:url" content="https://greatx806.github.io/wdd231/chamber/join.html">
 
   <script defer src="scripts/chamber.js"></script>
 </head>
@@ -24,7 +31,7 @@
     <div class="header-inner">
       <a class="brand" href="index.html">
         <span class="brand-mark" aria-hidden="true">LC</span>
-        <span class="brand-text">Lagos Chamber<br />of Commerce</span>
+        <span class="brand-text">Lagos Chamber<br>of Commerce</span>
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
@@ -43,12 +50,12 @@
   </header>
 
   <main id="main-content">
-    <div style="max-width: var(--max-width); margin: 0 auto; padding: 2.5rem 1.25rem 0;">
+    <div class="page-intro">
       <h1>Join the Lagos Chamber of Commerce</h1>
       <p>Fill out the application below and our membership team will follow up within two business days. Not sure which level fits? Compare benefits in the cards to the right.</p>
     </div>
 
-    <div class="join-layout" style="max-width: var(--max-width); margin: 0 auto; padding: 1rem 1.25rem 3rem;">
+    <div class="join-layout">
 
       <form class="join-form panel" action="thankyou.html" method="get">
         <fieldset>
@@ -63,7 +70,7 @@
               title="Please enter your first name"
               autocomplete="given-name"
               required
-            />
+            >
           </label>
 
           <label for="lname">
@@ -75,7 +82,7 @@
               title="Please enter your last name"
               autocomplete="family-name"
               required
-            />
+            >
           </label>
 
           <label for="orgtitle">
@@ -87,7 +94,7 @@
               title="Letters, hyphens, and spaces only, at least 7 characters"
               autocomplete="organization-title"
               pattern="[A-Za-z\-\s]{7,}"
-            />
+            >
             <small>Example: Marketing Director. Letters, hyphens and spaces only, minimum 7 characters.</small>
           </label>
 
@@ -101,7 +108,7 @@
               autocomplete="email"
               placeholder="yourname@example.com"
               required
-            />
+            >
           </label>
 
           <label for="phone">
@@ -113,7 +120,7 @@
               title="Please enter your mobile phone number"
               autocomplete="tel"
               required
-            />
+            >
           </label>
 
           <label for="orgname">
@@ -125,7 +132,7 @@
               title="Please enter your business or organization name"
               autocomplete="organization"
               required
-            />
+            >
           </label>
         </fieldset>
 
@@ -133,19 +140,19 @@
           <legend>Membership level</legend>
           <div class="radio-group" role="radiogroup" aria-label="Membership level">
             <label class="radio-option" for="level-np">
-              <input type="radio" id="level-np" name="membership" value="np" required />
+              <input type="radio" id="level-np" name="membership" value="np" required>
               NP (non-profit, no fee)
             </label>
             <label class="radio-option" for="level-bronze">
-              <input type="radio" id="level-bronze" name="membership" value="bronze" required />
+              <input type="radio" id="level-bronze" name="membership" value="bronze" required>
               Bronze
             </label>
             <label class="radio-option" for="level-silver">
-              <input type="radio" id="level-silver" name="membership" value="silver" required />
+              <input type="radio" id="level-silver" name="membership" value="silver" required>
               Silver
             </label>
             <label class="radio-option" for="level-gold">
-              <input type="radio" id="level-gold" name="membership" value="gold" required />
+              <input type="radio" id="level-gold" name="membership" value="gold" required>
               Gold
             </label>
           </div>
@@ -163,7 +170,7 @@
           </label>
         </fieldset>
 
-        <input type="hidden" id="timestamp" name="timestamp" />
+        <input type="hidden" id="timestamp" name="timestamp">
 
         <button class="cta-button submit-button" type="submit">Submit application</button>
       </form>

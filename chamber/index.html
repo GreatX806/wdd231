@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lagos Chamber of Commerce | Home</title>
-  <meta name="description" content="The Lagos Chamber of Commerce connects local businesses with the resources, events, and members who help them grow." />
-  <meta name="author" content="Great Afangide" />
+  <meta name="description" content="The Lagos Chamber of Commerce connects local businesses with the resources, events, and members who help them grow.">
+  <meta name="author" content="Great Afangide">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b4f4a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23e0a527' text-anchor='middle'%3ELC%3C/text%3E%3C/svg%3E" />
-  <meta name="theme-color" content="#0b4f4a" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b4f4a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23e0a527' text-anchor='middle'%3ELC%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0b4f4a">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Lagos Chamber of Commerce" />
-  <meta property="og:description" content="Connecting Lagos businesses since 1998." />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lagos Chamber of Commerce | Connecting Local Business">
+  <meta property="og:description" content="Connecting Lagos businesses since 1998. See member spotlights, upcoming events, local weather, and how to join the chamber.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://greatx806.github.io/wdd231/chamber/images/hero-lagos.webp">
+  <meta property="og:url" content="https://greatx806.github.io/wdd231/chamber/index.html">
 
   <script defer src="scripts/chamber.js"></script>
 </head>
@@ -29,7 +31,7 @@
     <div class="header-inner">
       <a class="brand" href="index.html">
         <span class="brand-mark" aria-hidden="true">LC</span>
-        <span class="brand-text">Lagos Chamber<br />of Commerce</span>
+        <span class="brand-text">Lagos Chamber<br>of Commerce</span>
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
@@ -47,16 +49,18 @@
     </div>
   </header>
 
-  <div class="hero">
-    <img src="images/hero.svg" alt="Silhouette of the Lagos skyline at dusk, viewed across the lagoon" />
-    <div class="hero-content">
-      <h1>Business grows where businesses connect</h1>
-      <p>The Lagos Chamber of Commerce brings local companies together through events, advocacy, and a member directory that puts your business in front of the right people.</p>
-      <a class="cta-button" href="join.html">Join the chamber</a>
-    </div>
-  </div>
-
+  <!-- main now wraps the hero so the single h1 lives inside it -->
   <main id="main-content">
+
+    <div class="hero">
+      <img src="images/hero-lagos.webp" alt="Lagos waterfront skyline at dusk across the lagoon" fetchpriority="high">
+      <div class="hero-content">
+        <h1>Business grows where businesses connect</h1>
+        <p>The Lagos Chamber of Commerce brings local companies together through events, advocacy, and a member directory that puts your business in front of the right people.</p>
+        <a class="cta-button" href="join.html">Join the chamber</a>
+      </div>
+    </div>
+
     <section class="info-panels">
 
       <section class="panel" id="events" aria-labelledby="events-heading">
@@ -71,7 +75,7 @@
         <div id="weatherNow" class="weather-now">
           <p class="weather-status">Loading current conditions…</p>
         </div>
-        <div id="weatherForecast" class="weather-forecast" aria-label="Three day forecast"></div>
+        <div id="weatherForecast" class="weather-forecast" role="group" aria-label="Three day forecast"></div>
       </section>
 
     </section>

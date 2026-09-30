@@ -1,0 +1,19 @@
+/* ===== Paste at the VERY BOTTOM of styles/styles.css ===== */
+
+/* Contrast fix: teal on ochre was 4.29:1, charcoal on ochre is 7.78:1 */
+.brand-mark {
+  color: var(--charcoal);
+}
+
+/* Replaces the inline style="" attributes on join.html */
+.page-intro {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 0;
+}
+
+.join-layout {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
