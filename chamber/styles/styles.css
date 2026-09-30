@@ -1,5 +1,6 @@
 /* ============================================
    Lagos Chamber of Commerce — shared stylesheet
+   Used by index.html, directory.html, and join.html
    ============================================ */
 
 :root {
@@ -57,7 +58,7 @@ p {
   margin: 0 0 1em;
 }
 
-/* Accessibility helper (Fixed: clip updated to clip-path) */
+/* Accessibility helper */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -65,7 +66,7 @@ p {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip-path: inset(50%);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
   color: var(--charcoal);
@@ -107,6 +108,7 @@ p {
   color: var(--paper);
 }
 
+/* FIXED CONTRAST: Charcoal text on Ochre background (7.78:1 ratio) */
 .brand-mark {
   width: 38px;
   height: 38px;
@@ -214,16 +216,18 @@ p {
   margin: 0 auto;
 }
 
-.hero-content h1 {
+.hero-content h1,
+.hero-content p {
   color: var(--paper);
   text-shadow: 0 2px 10px #00000059;
+}
+
+.hero-content h1 {
   font-size: clamp(1.8rem, 4.5vw, 3rem);
   max-width: 14ch;
 }
 
 .hero-content p {
-  color: var(--paper);
-  text-shadow: 0 2px 10px #00000059;
   max-width: 42ch;
   font-size: 1.05rem;
 }
@@ -254,6 +258,7 @@ main {
   padding: 2.5rem 1.25rem 3rem;
 }
 
+/* Layout helpers replacing inline styles on join.html */
 .page-intro {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -269,7 +274,6 @@ main {
 
 .panel,
 .spotlight-card,
-.panel,
 .membership-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -288,7 +292,6 @@ main {
 .confirmation-list dt {
   color: var(--teal-deep);
 }
-
 
 .panel h2 {
   font-size: 1.4rem;
@@ -320,16 +323,6 @@ main {
   background: var(--sand);
 }
 
-.membership-badge {
-  background: var(--sand);
-  align-self: flex-start;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  color: var(--teal-deep);
-}
-
 .event-date {
   border-radius: 8px;
   text-align: center;
@@ -349,7 +342,6 @@ main {
   display: block;
   font-size: 0.72rem;
   letter-spacing: 0.03em;
-  color: var(--charcoal-soft);
 }
 
 .event-title {
@@ -364,6 +356,9 @@ main {
 .spotlight-card address,
 .join-form small,
 .membership-card p,
+.event-date .month {
+  color: var(--charcoal-soft);
+}
 
 .event-meta,
 .weather-status {
@@ -451,15 +446,6 @@ main {
   margin-bottom: 0;
 }
 
-.membership-badge {
-  align-self: flex-start;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  color: var(--teal-deep);
-}
-
 .spotlight-card address {
   font-style: normal;
   font-size: 0.92rem;
@@ -505,6 +491,7 @@ main {
 
 /* ---------- Join Page ---------- */
 
+/* Updated join-layout with centered container defaults */
 .join-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -549,8 +536,6 @@ main {
   font: inherit;
   color: var(--charcoal);
   background: var(--white);
-  min-height: 110px;
-  resize: vertical;
 }
 
 .join-form input:focus-visible,
@@ -559,6 +544,10 @@ main {
   outline-offset: 1px;
 }
 
+.join-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
 
 .join-form small {
   display: block;
@@ -592,7 +581,6 @@ main {
   font: inherit;
   cursor: pointer;
 }
-
 
 .submit-button {
   border: none;
