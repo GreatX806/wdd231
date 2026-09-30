@@ -1,6 +1,5 @@
 /* ============================================
    Lagos Chamber of Commerce — shared stylesheet
-   Used by index.html and directory.html
    ============================================ */
 
 :root {
@@ -58,7 +57,7 @@ p {
   margin: 0 0 1em;
 }
 
-/* Fixed contrast issue for screen readers and audit tools */
+/* Accessibility helper (Fixed: clip updated to clip-path) */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -66,7 +65,7 @@ p {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
   color: var(--charcoal);
@@ -115,7 +114,7 @@ p {
   background: var(--ochre);
   display: grid;
   place-items: center;
-  color: var(--teal-deep);
+  color: var(--charcoal);
   font-family: var(--font-display);
   font-weight: 700;
   flex-shrink: 0;
@@ -255,6 +254,12 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 2.5rem 1.25rem 3rem;
+}
+
+.page-intro {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 0;
 }
 
 .info-panels {
@@ -498,6 +503,9 @@ main {
   grid-template-columns: 1fr;
   gap: 2rem;
   align-items: start;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
 }
 
 .join-form fieldset {
@@ -753,4 +761,4 @@ dialog::backdrop {
     opacity: 1;
     transform: none;
   }
-}
+}updated 
