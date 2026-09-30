@@ -72,7 +72,7 @@ function displayEvents() {
 
 // ---------- Weather (OpenWeatherMap) ----------
 // Get a free API key at https://openweathermap.org/api and paste it below.
-const WEATHER_API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
+const WEATHER_API_KEY = "c58cb30f8bd78f33b6149e88073b5463";
 const WEATHER_LAT = 6.5244; // Lagos, NG
 const WEATHER_LON = 3.3792;
 
