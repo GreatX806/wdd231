@@ -214,18 +214,16 @@ p {
   margin: 0 auto;
 }
 
-.hero-content h1,
-.hero-content p {
+.hero-content h1 {
   color: var(--paper);
   text-shadow: 0 2px 10px #00000059;
-}
-
-.hero-content h1 {
   font-size: clamp(1.8rem, 4.5vw, 3rem);
   max-width: 14ch;
 }
 
 .hero-content p {
+  color: var(--paper);
+  text-shadow: 0 2px 10px #00000059;
   max-width: 42ch;
   font-size: 1.05rem;
 }
@@ -271,6 +269,7 @@ main {
 
 .panel,
 .spotlight-card,
+.panel,
 .membership-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -289,6 +288,7 @@ main {
 .confirmation-list dt {
   color: var(--teal-deep);
 }
+
 
 .panel h2 {
   font-size: 1.4rem;
@@ -316,9 +316,18 @@ main {
 }
 
 .event-date,
-.forecast-day,
+.forecast-day {
+  background: var(--sand);
+}
+
 .membership-badge {
   background: var(--sand);
+  align-self: flex-start;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  color: var(--teal-deep);
 }
 
 .event-date {
@@ -340,6 +349,7 @@ main {
   display: block;
   font-size: 0.72rem;
   letter-spacing: 0.03em;
+  color: var(--charcoal-soft);
 }
 
 .event-title {
@@ -354,9 +364,6 @@ main {
 .spotlight-card address,
 .join-form small,
 .membership-card p,
-.event-date .month {
-  color: var(--charcoal-soft);
-}
 
 .event-meta,
 .weather-status {
@@ -542,6 +549,8 @@ main {
   font: inherit;
   color: var(--charcoal);
   background: var(--white);
+  min-height: 110px;
+  resize: vertical;
 }
 
 .join-form input:focus-visible,
@@ -550,10 +559,6 @@ main {
   outline-offset: 1px;
 }
 
-.join-form textarea {
-  min-height: 110px;
-  resize: vertical;
-}
 
 .join-form small {
   display: block;
@@ -587,6 +592,7 @@ main {
   font: inherit;
   cursor: pointer;
 }
+
 
 .submit-button {
   border: none;
