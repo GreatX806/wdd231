@@ -343,6 +343,7 @@ main {
   display: block;
   font-size: 0.72rem;
   letter-spacing: 0.03em;
+  color: var(--charcoal-soft);
 }
 
 .event-title {
@@ -356,8 +357,7 @@ main {
 .forecast-day .label,
 .spotlight-card address,
 .join-form small,
-.membership-card p,
-.event-date .month {
+.membership-card p {
   color: var(--charcoal-soft);
 }
 
