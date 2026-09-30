@@ -236,8 +236,6 @@ p {
   padding: 1.5rem 1.5rem 2.5rem;
   max-width: var(--max-width);
   margin: 0 auto;
-  left: 0;
-  right: 0;
 }
 
 .hero-content h1 {
@@ -287,13 +285,6 @@ main {
   margin-bottom: 3rem;
 }
 
-@media (min-width: 700px) {
-  .info-panels {
-    grid-template-columns: 1.1fr 1fr;
-    align-items: start;
-  }
-}
-
 .panel {
   background: #fff;
   border: 1px solid var(--line);
@@ -301,9 +292,13 @@ main {
   padding: 1.5rem 1.5rem 1.75rem;
 }
 
+.panel h2,
+.spotlights h2 {
+  color: var(--teal-deep);
+}
+
 .panel h2 {
   font-size: 1.4rem;
-  color: var(--teal-deep);
 }
 
 .event-list {
@@ -355,10 +350,18 @@ main {
   margin: 0 0 0.2rem;
 }
 
+.event-meta,
+.weather-desc,
+.weather-status,
+.forecast-day .label,
+.spotlight-card address,
+.join-form small,
+.membership-card p {
+  color: var(--charcoal-soft);
+}
+
 .event-meta {
   font-size: 0.9rem;
-  color: var(--charcoal-soft);
-  margin: 0;
 }
 
 /* Weather panel */
@@ -379,7 +382,6 @@ main {
 
 .weather-desc {
   text-transform: capitalize;
-  color: var(--charcoal-soft);
 }
 
 .weather-forecast {
@@ -398,7 +400,6 @@ main {
 .forecast-day .label {
   display: block;
   font-size: 0.8rem;
-  color: var(--charcoal-soft);
   margin-bottom: 0.3rem;
 }
 
@@ -409,14 +410,12 @@ main {
 
 .weather-status {
   font-size: 0.9rem;
-  color: var(--charcoal-soft);
 }
 
 /* ---------- Spotlights ---------- */
 
 .spotlights h2 {
   font-size: 1.6rem;
-  color: var(--teal-deep);
   margin-bottom: 1.25rem;
 }
 
@@ -427,6 +426,11 @@ main {
 }
 
 @media (min-width: 700px) {
+  .info-panels {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: start;
+  }
+
   .spotlight-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -473,7 +477,6 @@ main {
 .spotlight-card address {
   font-style: normal;
   font-size: 0.92rem;
-  color: var(--charcoal-soft);
   margin: 0;
 }
 
@@ -586,7 +589,6 @@ main {
 .join-form small {
   display: block;
   font-weight: 400;
-  color: var(--charcoal-soft);
   margin-top: 0.3rem;
 }
 
@@ -610,10 +612,15 @@ main {
   accent-color: var(--teal-deep);
 }
 
-.submit-button {
+.submit-button,
+.membership-card button,
+.dialog-close {
   font: inherit;
-  border: none;
   cursor: pointer;
+}
+
+.submit-button {
+  border: none;
 }
 
 /* Membership cards */
@@ -654,26 +661,29 @@ main {
   }
 }
 
+.membership-card h3,
+.dialog-inner h3,
+.confirmation-panel h1,
+.confirmation-list dt {
+  color: var(--teal-deep);
+}
+
 .membership-card h3 {
   font-size: 1.1rem;
-  color: var(--teal-deep);
 }
 
 .membership-card p {
   font-size: 0.92rem;
-  color: var(--charcoal-soft);
   margin-bottom: 0.75rem;
 }
 
 .membership-card button {
-  font: inherit;
   font-weight: 600;
   font-size: 0.92rem;
   background: none;
   border: none;
   color: var(--teal-deep);
   text-decoration: underline;
-  cursor: pointer;
   padding: 0;
 }
 
@@ -696,7 +706,6 @@ dialog::backdrop {
 }
 
 .dialog-inner h3 {
-  color: var(--teal-deep);
   margin-bottom: 0.75rem;
 }
 
@@ -710,23 +719,17 @@ dialog::backdrop {
 }
 
 .dialog-close {
-  font: inherit;
   font-weight: 600;
   background: var(--ochre);
   color: var(--charcoal);
   border: none;
   border-radius: 999px;
   padding: 0.55rem 1.3rem;
-  cursor: pointer;
 }
 
 /* ============================================
    Thank-you page
    ============================================ */
-
-.confirmation-panel h1 {
-  color: var(--teal-deep);
-}
 
 .confirmation-list {
   margin: 1.5rem 0 0;
@@ -744,7 +747,6 @@ dialog::backdrop {
 
 .confirmation-list dt {
   font-weight: 600;
-  color: var(--teal-deep);
 }
 
 .confirmation-list dd {
