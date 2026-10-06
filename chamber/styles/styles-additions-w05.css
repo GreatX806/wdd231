@@ -1,0 +1,166 @@
+/* ===== W05 Discover page: paste at the VERY BOTTOM of styles/styles.css ===== */
+
+/* (Skip this block if you already pasted .page-intro from the earlier join fix) */
+.page-intro {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 0;
+}
+
+/* ---------- Last visit message ---------- */
+.visit-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--sand);
+  color: var(--charcoal);
+  border-left: 4px solid var(--teal-deep);
+  border-radius: 6px;
+}
+
+.visit-message[hidden] {
+  display: none;
+}
+
+.visit-close {
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25rem 0.6rem;
+  background: none;
+  border: none;
+  color: var(--charcoal);
+  cursor: pointer;
+}
+
+/* ---------- Discover grid: named areas ---------- */
+/* Small (320px - 640px): one stacked column, a through h in order */
+.discover-grid {
+  display: grid;
+  gap: 1.25rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g"
+    "h";
+}
+
+.place-card:nth-child(1) { grid-area: a; }
+.place-card:nth-child(2) { grid-area: b; }
+.place-card:nth-child(3) { grid-area: c; }
+.place-card:nth-child(4) { grid-area: d; }
+.place-card:nth-child(5) { grid-area: e; }
+.place-card:nth-child(6) { grid-area: f; }
+.place-card:nth-child(7) { grid-area: g; }
+.place-card:nth-child(8) { grid-area: h; }
+
+/* ---------- Place cards ---------- */
+.place-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid var(--sand);
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.place-card h2 {
+  font-size: 1.2rem;
+  color: var(--teal-deep);
+}
+
+.place-card figure {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.place-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.place-card address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--charcoal-soft);
+}
+
+.place-card p {
+  color: var(--charcoal);
+}
+
+.learn-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.6rem 1.25rem;
+  background-color: var(--teal-deep);
+  color: var(--paper);
+  font-weight: 600;
+  border: 2px solid var(--teal-deep);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.learn-btn:hover,
+.learn-btn:focus-visible {
+  background-color: var(--ochre);
+  border-color: var(--ochre);
+  color: var(--charcoal);
+}
+
+/* Medium (641px - 1024px): two columns with full-width feature rows */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d d"
+      "e f"
+      "g h";
+  }
+}
+
+/* Large (1025px and above): four columns, big feature card plus a wide closer */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a a b c"
+      "a a d e"
+      "f g h h";
+  }
+}
+
+/* Image hover effect: larger views only (not on mobile) */
+@media (min-width: 641px) {
+  .place-card img {
+    transition: transform 0.35s ease, filter 0.35s ease;
+  }
+
+  .place-card img:hover {
+    transform: scale(1.08);
+    filter: saturate(1.4) brightness(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .place-card img {
+    transition: none;
+  }
+}

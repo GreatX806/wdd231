@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Lagos | Lagos Chamber of Commerce</title>
+  <meta name="description" content="Explore eight Lagos attractions, from beaches and galleries to museums and nature reserves, chosen to inspire visitors and prospective chamber members.">
+  <meta name="author" content="Great Afangide">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b4f4a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23e0a527' text-anchor='middle'%3ELC%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0b4f4a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Discover Lagos | Lagos Chamber of Commerce">
+  <meta property="og:description" content="Explore eight Lagos attractions, from beaches and galleries to museums and nature reserves, chosen to inspire visitors and new members.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://greatx806.github.io/wdd231/chamber/images/hero-lagos.webp">
+  <meta property="og:url" content="https://greatx806.github.io/wdd231/chamber/discover.html">
+
+  <script defer src="scripts/chamber.js"></script>
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">LC</span>
+        <span class="brand-text">Lagos Chamber<br>of Commerce</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html" aria-current="page">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-intro">
+      <h1>Discover Lagos</h1>
+      <p>Lagos is Nigeria's business and cultural capital. These eight places show why visitors and member businesses love working, meeting, and unwinding here.</p>
+
+      <div class="visit-message" id="visitMessage" role="status" hidden>
+        <p id="visitText"></p>
+        <button class="visit-close" id="visitClose" type="button" aria-label="Dismiss visit message">&times;</button>
+      </div>
+    </div>
+
+    <section class="discover-grid" id="discoverGrid" aria-label="Lagos places of interest">
+      <!-- 8 cards built by scripts/discover.js from data/discover.mjs -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="currentYear"></span> Lagos Chamber of Commerce | Great Afangide</p>
+      <ul class="social-links">
+        <li><a href="https://linkedin.com/in/great-afangide-598083270" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://github.com/GreatX806" aria-label="GitHub">GitHub</a></li>
+      </ul>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+</body>
+</html>
