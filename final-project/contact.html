@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Your Business | Lagos Business Connect</title>
+  <meta name="description" content="Tell us about your Lagos business and request a free listing in the Lagos Business Connect directory.">
+  <meta name="author" content="Great Afangide">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="List Your Business | Lagos Business Connect">
+  <meta property="og:description" content="Tell us about your Lagos business and request a free listing in the Lagos Business Connect directory.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://greatx806.github.io/wdd231/final/images/hero.webp">
+  <meta property="og:url" content="https://greatx806.github.io/wdd231/final/contact.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/contact.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" alt="" width="36" height="36">
+        <span>Lagos Business Connect</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-intro">
+      <h1>List Your Business</h1>
+      <p>Tell us about your Lagos business and we will review your request for a free directory listing. Fields marked required must be completed.</p>
+    </div>
+
+    <form class="biz-form" id="listing-form" action="thankyou.html" method="get">
+      <div class="field">
+        <label for="fname">First name (required)</label>
+        <input type="text" id="fname" name="fname" autocomplete="given-name" title="Please enter your first name" required>
+      </div>
+      <div class="field">
+        <label for="lname">Last name (required)</label>
+        <input type="text" id="lname" name="lname" autocomplete="family-name" title="Please enter your last name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email address (required)</label>
+        <input type="email" id="email" name="email" autocomplete="email" title="Please enter a valid email address" required>
+      </div>
+      <div class="field">
+        <label for="phone">Phone number (required)</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9+\s]{10,16}" title="Use 10 to 16 digits, spaces, or a leading +" required>
+        <small>Example: +234 801 234 5678</small>
+      </div>
+      <div class="field">
+        <label for="bizname">Business name (required)</label>
+        <input type="text" id="bizname" name="bizname" autocomplete="organization" title="Please enter your business name" required>
+      </div>
+      <div class="field">
+        <label for="form-category">Category (required)</label>
+        <select id="form-category" name="category" title="Please choose a category" required>
+          <option value="">Choose a category</option>
+          <option value="Food &amp; Drink">Food &amp; Drink</option>
+          <option value="Fashion &amp; Beauty">Fashion &amp; Beauty</option>
+          <option value="Technology">Technology</option>
+          <option value="Health &amp; Wellness">Health &amp; Wellness</option>
+          <option value="Logistics &amp; Transport">Logistics &amp; Transport</option>
+          <option value="Professional Services">Professional Services</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="form-area">Area of Lagos (required)</label>
+        <select id="form-area" name="area" title="Please choose an area" required>
+          <option value="">Choose an area</option>
+          <option value="Ajah">Ajah</option>
+          <option value="Apapa">Apapa</option>
+          <option value="Ikeja">Ikeja</option>
+          <option value="Ikoyi">Ikoyi</option>
+          <option value="Lekki">Lekki</option>
+          <option value="Surulere">Surulere</option>
+          <option value="Victoria Island">Victoria Island</option>
+          <option value="Yaba">Yaba</option>
+          <option value="Other">Other area in Lagos</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="description">What does your business do? (required)</label>
+        <textarea id="description" name="description" maxlength="300" title="Briefly describe your business" required></textarea>
+        <small id="description-count">0 / 300 characters</small>
+      </div>
+      <input type="hidden" id="timestamp" name="timestamp">
+      <button type="submit" class="btn btn-accent">Submit listing request</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Lagos Business Connect | Great Afangide</p>
+      <ul class="footer-links">
+        <li><a href="attributions.html">Attributions</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a></li>
+      </ul>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

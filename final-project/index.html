@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagos Business Connect | Local Business Directory</title>
+  <meta name="description" content="Lagos Business Connect helps you find trusted local businesses across Lagos, filter by area and category, and save your favorites.">
+  <meta name="author" content="Great Afangide">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lagos Business Connect | Local Business Directory">
+  <meta property="og:description" content="Lagos Business Connect helps you find trusted local businesses across Lagos, filter by area and category, and save your favorites.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://greatx806.github.io/wdd231/final/images/hero.webp">
+  <meta property="og:url" content="https://greatx806.github.io/wdd231/final/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/home.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" alt="" width="36" height="36">
+        <span>Lagos Business Connect</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <img src="images/hero.webp" alt="Illustration of the Lagos skyline at dusk with glowing lines connecting the buildings" width="1200" height="500" fetchpriority="high">
+      <div class="hero-content">
+        <h1>Lagos Business Connect</h1>
+        <p>Find trusted local businesses across Lagos, filter by area, and save the ones you love.</p>
+        <a class="btn btn-accent" href="businesses.html">Browse the directory</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="stats-heading">
+      <h2 id="stats-heading" class="visually-hidden">Directory at a glance</h2>
+      <ul class="stats" id="stats">
+        <li><span class="stat-label">Loading directory facts&hellip;</span></li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Top-rated businesses</h2>
+      <p class="section-intro">These four businesses have the highest customer ratings in our directory.</p>
+      <div class="card-grid" id="featured">
+        <p class="status">Loading top-rated businesses&hellip;</p>
+      </div>
+      <p class="center"><a class="btn btn-outline" href="businesses.html">See all businesses</a></p>
+    </section>
+
+    <section class="section" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why use Lagos Business Connect?</h2>
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Search by area</h3>
+          <p>Lagos is big. Filter by neighbourhood such as Lekki, Ikeja, Yaba, or Victoria Island to find what is close to you.</p>
+        </article>
+        <article class="info-card">
+          <h3>Save your favorites</h3>
+          <p>Tap Save on any business and it stays on this device, so your shortlist is ready the next time you visit.</p>
+        </article>
+        <article class="info-card">
+          <h3>Get the full picture</h3>
+          <p>Open any listing to see the address, opening hours, phone number, rating, and a short description.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta-banner" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Own a business in Lagos?</h2>
+      <p>Send us your details and ask for a free listing in the directory.</p>
+      <a class="btn btn-accent" href="contact.html">List your business</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Lagos Business Connect | Great Afangide</p>
+      <ul class="footer-links">
+        <li><a href="attributions.html">Attributions</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a></li>
+      </ul>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Listing | Lagos Business Connect</title>
+  <meta name="description" content="Thank you for submitting your business to Lagos Business Connect. Here is a summary of the details you sent.">
+  <meta name="author" content="Great Afangide">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Thank You for Listing | Lagos Business Connect">
+  <meta property="og:description" content="Thank you for submitting your business to Lagos Business Connect. Here is a summary of the details you sent.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://greatx806.github.io/wdd231/final/images/hero.webp">
+  <meta property="og:url" content="https://greatx806.github.io/wdd231/final/thankyou.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/thankyou.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" alt="" width="36" height="36">
+        <span>Lagos Business Connect</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-intro">
+      <h1>Thank You for Listing Your Business</h1>
+      <p>We have received your request and will contact you within three working days. Here is what you sent us.</p>
+    </div>
+
+    <dl class="summary-box" id="summary" aria-label="Submitted details"></dl>
+    <p class="center"><a class="btn btn-outline" href="businesses.html">Back to the directory</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Lagos Business Connect | Great Afangide</p>
+      <ul class="footer-links">
+        <li><a href="attributions.html">Attributions</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a></li>
+      </ul>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

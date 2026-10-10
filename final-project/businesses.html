@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Directory | Lagos Business Connect</title>
+  <meta name="description" content="Browse 18 Lagos businesses by category and area, view full details, and save your favorites to find them again quickly.">
+  <meta name="author" content="Great Afangide">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Business Directory | Lagos Business Connect">
+  <meta property="og:description" content="Browse 18 Lagos businesses by category and area, view full details, and save your favorites to find them again quickly.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://greatx806.github.io/wdd231/final/images/hero.webp">
+  <meta property="og:url" content="https://greatx806.github.io/wdd231/final/businesses.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/businesses.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" alt="" width="36" height="36">
+        <span>Lagos Business Connect</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="businesses.html" aria-current="page">Businesses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-intro">
+      <h1>Lagos Business Directory</h1>
+      <p>Search eighteen Lagos businesses, filter by category or area, and save your favorites. Your saved businesses and filters are remembered on this device.</p>
+    </div>
+
+    <div class="filters" role="search" aria-label="Filter businesses">
+      <div class="field field-wide">
+        <label for="search">Search</label>
+        <input type="search" id="search" name="search" placeholder="Try coffee, tailor, or clinic" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option value="all">All categories</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="area">Area</label>
+        <select id="area" name="area">
+          <option value="all">All areas</option>
+        </select>
+      </div>
+      <div class="filter-buttons">
+        <button type="button" class="btn btn-outline" id="favorites-only" aria-pressed="false">Saved only</button>
+        <button type="button" class="btn btn-outline" id="reset">Clear filters</button>
+      </div>
+    </div>
+
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+
+    <h2 class="visually-hidden">Business listings</h2>
+    <div class="card-grid" id="results">
+      <p class="status">Loading businesses&hellip;</p>
+    </div>
+
+    <dialog id="business-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-inner">
+        <h2 id="dialog-title"></h2>
+        <div id="dialog-body"></div>
+        <button type="button" class="btn" id="dialog-close">Close</button>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Lagos Business Connect | Great Afangide</p>
+      <ul class="footer-links">
+        <li><a href="attributions.html">Attributions</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a></li>
+      </ul>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
